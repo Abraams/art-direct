@@ -1,0 +1,138 @@
+.footer {
+	padding: 2.5rem 0;
+	background-color: @dark;
+	position: relative;
+	z-index: 9;
+
+	&__content {
+		max-width: 1000px;
+		margin: 0 auto;
+
+		.content {
+			&__wrap {
+				justify-content: space-between;
+				@media screen and @media500 {
+					flex-direction: column;
+					align-items: center;
+				}
+			}
+		}
+	}
+
+	.content {
+		&__item {
+			@media screen and @media768 {
+				margin-bottom: 1.59090909em;
+				min-width: 160px;
+			}
+			@media screen and @media500 {
+				flex-direction: row;
+				width: 100%;
+				justify-content: space-around;
+				align-items: flex-end;
+				text-align: center;
+			}
+			@media screen and @media320 {
+				flex-direction: column;
+				align-items: center;
+				margin-bottom: 0;
+			}
+
+			> li {
+				font-size: 1.1rem;
+				transition: 0.15s ease-in-out;
+				@media screen and @media500 {
+					width: 100%;
+					max-width: 50%;
+				}
+				@media screen and @media320 {
+					max-width: none;
+					margin-bottom: 1.59090909em;
+				}
+
+				* {
+					transition: inherit;
+				}
+
+				&:not(:last-child) {
+					margin-bottom: 1.5909090909090908em;
+					@media screen and @media500 {
+						margin-bottom: 0;
+					}
+					@media screen and @media320 {
+						margin-bottom: 1.59090909em;
+					}
+				}
+
+				a {
+					display: -webkit-flex;
+					display: -ms-flex;
+					display: flex;
+					align-items: center;
+					color: #fff;
+					font-size: 1em;
+					@media screen and @media500 {
+						flex-direction: column;
+					}
+
+					i {
+						margin-right: 1.25em;
+						width: 50px;
+						max-width: 1.6818181818181819em;
+						max-height: 1.6818181818181819em;
+						transform: scale(1);
+						@media screen and @media500 {
+							margin-bottom: 1.25em;
+							margin-right: 0;
+						}
+
+						img,
+						svg {
+							width: 100%;
+							max-width: 1.6818181818181819em;
+							max-height: 1.6818181818181819em;
+						}
+					}
+				}
+
+				&:hover {
+					a {
+						color: @violet;
+
+						img,
+						svg {
+							transform: scale(1.1);
+						}
+					}
+				}
+			}
+		}
+
+		&__description {
+			justify-content: space-around;
+			margin-top: 2.5rem;
+			font-size: 0.8rem;
+			@media screen and @media768 {
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+
+				p + a{
+					margin-top: 1rem;
+				}
+			}
+
+			a,
+			p {
+				color: #fff;
+				font-size: 1em;
+			}
+
+			a {
+				&:hover {
+					color: @violet;
+				}
+			}
+		}
+	}
+}

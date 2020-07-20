@@ -1,0 +1,81 @@
+.social-links {
+	padding-bottom: 3rem;
+	padding-top: 1.5rem;
+	@media screen and @media768 {
+		padding-top: 3rem;
+		padding-bottom: 1.5rem;
+		background: linear-gradient(45deg, #510381 0%, #800189 100%);
+	}
+
+	* {
+		color: #fff;
+	}
+
+	&::after {
+		width: 96rem;
+		height: 37.25rem;
+		background: url("../img/index/sec-7/bg.png") no-repeat top/100%;
+		bottom: -1.5rem;
+		left: 50%;
+		@media screen and @media950 {
+			bottom: 0;
+		}
+		@media screen and @media768 {
+			display: none;
+		}
+	}
+
+	&__heading {
+		h2 + h5 {
+			margin-top: 2rem;
+		}
+	}
+
+	&__content {
+		justify-content: center;
+		margin-top: 5.75rem;
+		transform: translate(0, -40px);
+		@media screen and @media768 {
+			justify-content: space-around;
+		}
+	}
+
+	&__item {
+		align-items: center;
+		justify-content: center;
+		transition: 0.15s ease-in-out;
+
+		* {
+			transition: inherit;
+		}
+
+		&:nth-child(2) {
+			margin-right: 9.75rem;
+			margin-left: 9.75rem;
+			@media screen and @media768 {
+				margin: 0;
+			}
+		}
+
+		i {
+			display: inline-flex;
+			width: 4.85em;
+			font-size: 1rem;
+			transform: scale(1);
+			filter: drop-shadow(0 0 1.7rem rgba(113, 6, 172, 1));
+			@media screen and @media768 {
+				font-size: 0.8rem;
+			}
+
+			+ span {
+				margin-top: 1.5rem;
+			}
+		}
+
+		&:hover {
+			i {
+				transform: scale(1.1);
+			}
+		}
+	}
+}
