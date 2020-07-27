@@ -1,0 +1,244 @@
+.offer {
+	position: relative;
+
+	.bg {
+		position: relative;
+		width: 96rem;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		@media screen and @media1000 {
+			max-width: 1000px;
+		}
+		@media screen and @media768 {
+			max-width: 768px;
+		}
+		@media screen and @media500 {
+			max-width: 100%;
+		}
+
+		img {
+			max-width: none;
+			max-height: none;
+		}
+	}
+
+	body.type-1 & {
+		.bg {
+			#illustration-1-1 {
+				position: absolute;
+				right: 0;
+				top: 0;
+				@media screen and @media1000 {
+					right: -65%;
+					top: -520px;
+				}
+				@media screen and @media768 {
+					right: -95%;
+					top: -4em;
+				}
+				@media screen and @media500 {
+					right: -1060px;
+					top: -20px;
+				}
+				@media screen and @media375 {
+					right: -1000px;
+					top: -30px;
+				}
+				@media screen and @media320 {
+					right: -930px;
+				}
+
+				svg {
+					width: 77.45rem;
+					height: 61.05rem;
+				}
+			}
+
+			#illustration-1-2 {
+				position: absolute;
+				left: 0;
+				top: 0;
+				@media screen and @media1000 {
+					left: -10%;
+				}
+				@media screen and @media768 {
+					left: -15%;
+				}
+				@media screen and @media500 {
+					left: -11em;
+				}
+				@media screen and @media320 {
+					left: -11em;
+				}
+
+				svg {
+					width: 17.45rem;
+					height: 73.65rem;
+				}
+			}
+		}
+	}
+
+	body.type-2 & {
+		.bg {
+			#illustration-2-1 {
+				position: absolute;
+				right: 0;
+				top: 0;
+				@media screen and @media1000 {
+					top: 250px;
+					right: -50%;
+				}
+				@media screen and @media768 {
+					// right: -95%;
+					// top: -4em;
+				}
+				@media screen and @media500 {
+					right: -200%;
+				}
+				@media screen and @media375 {
+					// right: -1000px;
+					// top: -30px;
+				}
+				@media screen and @media320 {
+					// right: -930px;
+				}
+
+				img,
+				svg {
+					width: 1920px;
+					height: 1342px;
+				}
+			}
+
+			#illustration-2-2 {
+				position: absolute;
+				left: 0;
+				top: 0;
+				@media screen and @media1000 {
+					top: -200px;
+				}
+				@media screen and @media768 {
+					// left: -15%;
+				}
+				@media screen and @media500 {
+					top: -270px;
+				}
+				@media screen and @media375 {
+					top: -360px;
+				}
+				@media screen and @media320 {
+					display: none;
+				}
+
+				img,
+				svg {
+					width: 237px;
+					height: 527px;
+				}
+			}
+		}
+	}
+
+	&__content {
+		padding-top: 8.5rem;
+		justify-content: space-between;
+		align-items: flex-start;
+		@media screen and @media1500 {
+			justify-content: space-around;
+		}
+		@media screen and @media1000 {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			padding-top: 7.5rem;
+			position: relative;
+		}
+		.offer__logo {
+			display: none;
+			width: 5em;
+			font-size: 40px;
+			position: absolute;
+			top: 3.4rem;
+			@media screen and @media1000 {
+				display: block;
+			}
+			@media screen and @media768 {
+				font-size: 32px;
+				top: 4rem;
+			}
+			@media screen and @media500 {
+				font-size: 30px;
+			}
+		}
+	}
+
+	&__heading {
+		max-width: 50%;
+		padding-top: 2.25rem;
+		@media screen and @media1000 {
+			max-width: 75%;
+		}
+		@media screen and @media768 {
+			max-width: none;
+		}
+
+		> :nth-child(2) {
+			margin-top: 2rem;
+			margin-bottom: 3rem;
+		}
+	}
+
+	&__img {
+		font-size: 1rem;
+		max-width: 98%;
+		@media screen and @media1500 {
+			font-size: 0.95em;
+		}
+		@media screen and @media1300 {
+			font-size: 0.9em;
+		}
+		@media screen and @media1000 {
+			font-size: 0.8em;
+			margin-top: 4.42em;
+		}
+		@media screen and @media500 {
+			font-size: 0.65em;
+		}
+		@media screen and @media320 {
+			font-size: 0.58em;
+		}
+
+		body#Index & {
+			width: 28.05em;
+		}
+
+		body#Services & {
+			width: 24.7em;
+			transform: translateX(-20%);
+			@media screen and @media1500 {
+				transform: translateX(-10%);
+			}
+			@media screen and @media1024 {
+				margin-right: -5%;
+			}
+		}
+
+		body#Reviews & {
+			width: 33.65em;
+		}
+
+		body#Complex & {
+			width: 35.25em;
+		}
+		body#Portfolio & {
+			width: 33.25em;
+		}
+
+		> img {
+			max-width: 100%;
+			pointer-events: none;
+		}
+	}
+}

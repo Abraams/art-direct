@@ -1,0 +1,81 @@
+.callback {
+	padding: 50px 0 100px;
+	// background-color: #fff;
+	@media screen and @media600 {
+		padding-bottom: 75px;
+	}
+
+	&__content {
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+		@media screen and @media1000 {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+	&__form {
+		max-width: 520px;
+		@media screen and @media1000 {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.form {
+			&__heading {
+				@media screen and @media1000 {
+					text-align: center;
+				}
+
+				h2 {
+					+ h5 {
+						margin-top: 30px;
+						margin-bottom: 40px;
+					}
+				}
+			}
+		}
+
+		button,
+		input,
+		textarea {
+			max-width: 420px;
+		}
+
+		button {
+			width: 100%;
+		}
+	}
+
+	&__img {
+		display: block;
+		width: 40em;
+		height: 22.8em;
+		font-size: 1rem;
+		margin-right: -50px;
+		@media screen and @media1300 {
+			font-size: 0.8rem;
+		}
+		@media screen and @media1100 {
+			font-size: 0.68rem;
+			margin-right: 0;
+			margin-top: 50px;
+		}
+		@media screen and @media1000 {
+			font-size: 0.8rem;
+		}
+		@media screen and @media600 {
+			font-size: 0.7em;
+		}
+		@media screen and @media500 {
+		}
+		@media screen and @media412 {
+			font-size: 0.53em;
+		}
+		@media screen and @media320 {
+			font-size: 0.45em;
+		}
+	}
+}

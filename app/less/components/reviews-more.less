@@ -1,0 +1,123 @@
+.reviews-more {
+	.slick-list {
+		overflow: visible;
+	}
+
+	.slider {
+		&__item {
+			.card {
+				padding: 3.25rem;
+				max-width: 64rem;
+				margin: 0 auto;
+				@media screen and @media1300 {
+					max-width: 1100px;
+				}
+				@media screen and @media1100 {
+					max-width: 1000px;
+				}
+				@media screen and @media1000 {
+					max-width: 768px;
+				}
+				@media screen and @media768 {
+					max-width: 500px;
+					padding: 25px;
+				}
+				@media screen and @media500 {
+					max-width: ~"calc(100% - 0.75rem)";
+				}
+				@media screen and @media412 {
+					padding: 45px 15px 15px;
+				}
+				@media screen and @media320 {
+					max-width: none;
+				}
+			}
+
+			.item {
+				&__heading {
+					@media screen and @media1000 {
+						flex-direction: column;
+						align-items: center;
+						text-align: center;
+					}
+
+					.item {
+						&__logo {
+							margin-right: 4rem;
+							max-width: 9.15rem;
+							@media screen and @media1000 {
+								margin: 0 0 1.75rem;
+							}
+						}
+
+						&__info {
+							* {
+								display: block;
+
+								+ * {
+									margin-top: 0.75rem;
+								}
+							}
+
+							h5 {
+								._fz32;
+								._fw900;
+							}
+
+							p {
+								._fz24;
+							}
+
+							a {
+								color: lighten(@violet, 10%);
+								._fw900;
+
+								&:hover {
+									color: lighten(@violet, 25%);
+								}
+							}
+						}
+
+						&__btn-wrap {
+							align-self: flex-end;
+							margin-left: auto;
+							@media screen and @media1000 {
+								margin: 1.25rem auto 0;
+							}
+
+							button {
+								padding: 0;
+								width: 11rem;
+								._fz24;
+							}
+						}
+					}
+				}
+
+				&__content {
+					padding: 2.5rem 6.75rem;
+					margin-top: 3rem;
+					color: #fff;
+					background: linear-gradient(
+						45deg,
+						rgb(111, 6, 172) 0%,
+						rgb(179, 7, 190) 100%
+					);
+					border-radius: 40px;
+					@media screen and @media1000 {
+						padding: 2.5rem;
+					}
+
+					p {
+						._fw300;
+						._fz20;
+
+						+ p {
+							margin-top: 1rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}
